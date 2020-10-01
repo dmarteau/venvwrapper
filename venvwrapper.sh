@@ -21,7 +21,7 @@ function venvwrapper_verify_workon_environment {
     typeset env_name="$1"
     if [ ! -d "$WORKON_HOME/$env_name" ]
     then
-       echo "ERROR: Environment '$env_name' does not exist. Create it with 'mkvirtualenv $env_name'." >&2
+       echo "ERROR: Environment '$env_name' does not exist. Create it with 'mkvenv $env_name'." >&2
        return 1
     fi
     return 0
